@@ -88,7 +88,7 @@ let x = 1;
 x = 0;
 x = -3;
 
-if (x === 0) {
+if (x !== 0) {
     console.log('Правильно!');
 } else {
     console.log('Не правильно!');
@@ -163,7 +163,7 @@ if (num1 > num2) {
 //     буде присвоювати змінній х значення "default"  якщо ви намагаєтесь присвоїти в неї falsy-значення (хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).
 
 let value = '';
-if (value === '' || value === 0 || value === null || value === undefined || value === NaN) {
+if (!value) {
     x = 'default';
     console.log(x)
 } else {
